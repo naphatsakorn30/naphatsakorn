@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hello world</title>
+
+</head>
+
+<body>
+    <h2>กรุณากรอกชื่อ</h2>
+    <input type="text" placeholder=" your name" id="name-input">
+    <h1 id="show-name">-</h1>
+
+    <script>
+        document.getElementById("name-input").addEventListener("input", function () {
+            const value = this.value;
+
+            document.getElementById("show-name").innerText = "สวัสดี: " + value;
+        });
+    </script>
+</body>
+
+</html>
