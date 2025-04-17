@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>input and select</title>
+    <style>
+      html  {
+        text-align: center;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 50px;
+            text-align: center;
+            background-color: rgb(10, 11, 28);
+           
+        }
+
+        p {
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>กรุณากรอกชื่อ</h1>
+    <input type="text" placeholder="กรอกชื่อ" id="name-input" />
+    <p id="show-name"></p>
+    <h2>เลือกภาษาคอมพิวเตอร์ที่คุณชอบมา 1 ภาษา</h2>
+    <select id="lang-select">
+        <option value="null">-</option>
+        <option value="PHP">PHP</option>
+        <option value="HTML">HTML</option>
+        <option value="JavaScript">JavaScript</option>
+        <option value="C++">C++</option>
+        <option value="Python">Python</option>
+        <option value="C#">C#</option>
+        <option value="Go">Go</option>
+    </select>
+    <h2 id="show-lang"></h2>
+    <script>
+        document.getElementById("name-input").addEventListener("input", function () {
+            const value = this.value
+            document.getElementById("show-name").innerText = "ยินดีต้อนรับ " + value;
+        });
+        document.getElementById("lang-select").addEventListener("change", function () {
+            const value = this.value
+            document.getElementById("show-lang").innerText = "ภาษาโปรแกรมที่ชอบ : " + value;
+        });
+    </script>
+   
+
+</body>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>age</title>
+    <style>
+        html {
+            text-align: center;
+        }
+        h1 {
+            color: #808080;
+            font-size: 50px;
+            text-align: center;
+            background-color: rgb(0, 0, 0);
+           
+        }
+
+        p {
+            color: rgb(22, 105, 105);
+            font-size: 30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>กรุณากรอกอายุ</h1>
+    <input type="number" placeholder="กรอกอายุ" id="age-input">
+    <button onclick="checkAge()" id="check-age">ตรวจสอบอายุ</button>
+    <h3 id="show-age"></h3>
+    <script>
+        function checkAge() {
+            const age = document.getElementById("age-input").value
+            if (age >= 60) {
+                document.getElementById("show-age").innerText = "วัยผู้สูงอายุ";
+            } else if (age >= 25) {
+                document.getElementById("show-age").innerText = "วัยทำงาน";
+            } else if (age >= 13) {
+                document.getElementById("show-age").innerText = "วัยรุ่น";
+            } else if (age >= 0) {
+                document.getElementById("show-age").innerText = "วัยเด็ก";
+            } else if (age < 0) {
+                alert("Error")
+                document.getElementById("show-age").innerText = " ";
+            }
+        };
+    </script>
+    
+
+</body>
