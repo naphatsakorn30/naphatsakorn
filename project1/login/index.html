@@ -19,13 +19,15 @@
     <script type="text/javascript" src="./jquery.min.js"></script>
     <script type="text/javascript" src="./bootstrap.min.js"></script>
     <link href="./bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
 
 
     <style type="text/css">
         body {
-            background-color: #f3f3f3;
+            background-color: #f8f9fa;
             font-size: 1.2em;
+            font-family: 'Segoe UI', sans-serif;
         }
         
         .form-login {
@@ -43,15 +45,26 @@
             text-align: center;
         }
         
-        .form-log-in-with-email .form-white-background {
+        .form-log-in-with-email  {
             box-sizing: border-box;
             width: 100%;
-            background-color: #ffffff;
+            background-color: #fffefe;
             box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
             padding: 40px 20px;
-            margin-bottom: 32px;
+            margin-bottom: 100px;
         }
-        
+        .form-white-background{
+            margin: auto;
+            box-sizing: border-box;
+            width: 30%;  /* กำหนดความกว้างฟอร์ม */
+            background-color: #e0fce2;  /* สีพื้นหลังของฟอร์ม */
+             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);  /* เงารอบๆ ฟอร์ม */
+             padding: 40px 20px;  /* ระยะห่างภายในฟอร์ม */
+            margin-bottom: 100px;  /* ระยะห่างด้านล่าง */
+            border-radius: 50px;  /* เพิ่มความโค้งมน */
+            transition: all 0.3s ease;  /* เพิ่มลูกเล่นในการเปลี่ยนแปลง */
+        }
+    
         .form-log-in-with-email .form-row {
             text-align: left;
             margin-bottom: 23px;
@@ -65,7 +78,7 @@
         .form-log-in-with-email h1 {
             display: inline-block;
             box-sizing: border-box;
-            color: #4c565e;
+            color: #3a6588;
             font-size: 24px;
             padding: 0 30px 15px;
             border-bottom: 2px solid #6caee0;
@@ -88,16 +101,16 @@
             width: 100%;
             box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
             padding: 12px 18px;
-            border: 1px solid #dbdbdb;
+            border: 1px solid #e2dddd;
         }
         
         .form-log-in-with-email button {
             display: block;
             border-radius: 2px;
-            background-color: #6caee0;
-            color: #ffffff;
+            background-color: #66daa9;
+            color: #ececec;
             font-weight: bold;
-            box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.08);
+            box-shadow: 1px 2px 4px 0 rgba(184, 29, 29, 0.08);
             padding: 15px 35px;
             border: 0;
             margin: 55px auto 0;
@@ -233,7 +246,7 @@
         #navigation-purple {
             padding-bottom: 0px;
             margin: 0;
-            background-color: yellowgreen;
+            background-color: rgb(91, 94, 87);
             border: none;
             border-radius: 0;
             position: inherit;
@@ -324,7 +337,7 @@
     <!-- FOOTER CSS -->
     <style type="text/css">
         .footer-distributed {
-            background-color: #292c2f;
+            background-color: rgb(91, 94, 87);
             box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
             box-sizing: border-box;
             width: 100%;
@@ -451,7 +464,7 @@
             width: 35px;
             height: 35px;
             cursor: pointer;
-            background-color: #33383b;
+            background-color: #383633;
             border-radius: 2px;
             font-size: 20px;
             color: #ffffff;
@@ -496,7 +509,10 @@
 
     <nav class="navbar navbar-default" id="navigation-purple">
         <div class="container">
-            <a href="#"><img class="img-responsive  avatar" src="./UTK-LOGO.png" alt="logo"></a>
+            <!-- <a href="https://www.rmutk.ac.th" target="_blank"> -->
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_2313,h_1259/https://www.rmutk.ac.th/wp-content/uploads/2024/03/%E0%B8%A3%E0%B8%B2%E0%B8%8A_RM_UTK-www-%E0%B8%A3%E0%B8%B2%E0%B8%8A%E0%B8%A1%E0%B8%87%E0%B8%84%E0%B8%A5%E0%B8%81%E0%B8%A3%E0%B8%B8%E0%B8%87%E0%B9%80%E0%B8%97%E0%B8%9E-01.png"
+                     alt="โลโก้มหาวิทยาลัยเทคโนโลยีราชมงคลกรุงเทพ"
+                     style="max-width: 200%; height: auto; width: 300px;">
             
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -521,7 +537,7 @@
             <div class="main-content">
 
                 <h2>LOGIN INTERNET</h2>
-                <form class="form-login" method="post" action="/auth/index.html/u">
+                <form class="form-login" method="post" >
 
                     <div class="form-log-in-with-email">
 
